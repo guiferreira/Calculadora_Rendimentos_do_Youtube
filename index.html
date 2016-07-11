@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de rendimentos do Youtube</title>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper blue">
+            <a href="#" class="brand-logo center">Calculadora de Rendimentos do Youtube</a>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="row">
+            <div class="card">
+                <div class="card-content">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="total_visualizacao" type="text" class="validate">
+                            <label for="total_visualizacao">Total de Visualização</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="receita_estimada" type="text" class="validate">
+                            <label for="receita_estimada">Receita Estimada $</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="calc_valor" type="text" class="validate">
+                            <label for="calc_valor">Calcular por Valor</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <h5 id="res_calc_valor">0 Visualizações</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="calc_visualizacao" type="text" class="validate">
+                            <label for="calc_visualizacao">Calcular por Visualização</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <h5 id="res_calc_visualizacao">$ 00.00 dólares</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a onclick="calculadora()" class="waves-effect waves-light btn blue">Calcular</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer blue">
+        <div class="footer-copyright">
+            <div class="container">
+                By GuiFerreiraCode
+            </div>
+        </div>
+    </footer>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/calculadora.js"></script>
+
+</body>
+</html>
